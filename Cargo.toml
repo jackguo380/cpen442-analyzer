@@ -1,0 +1,32 @@
+[package]
+name = "analyzer"
+version = "0.1.0"
+authors = ["Jack Guo <jackguo380@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rayon = "1.1"
+fnv = "1.0.3"
+cipher-crypt = "0.17.0"
+rand = "0.7"
+ctrlc = "3.1.3"
+thread-priority = "0.1.0"
+crc32fast = "1.2.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[[bin]]
+name = "p1"
+path = "src/bin/p1.rs"
+
+[[bin]]
+name = "p2"
+path = "src/bin/p2.rs"
+
+[[bin]]
+name = "p3"
+path = "src/bin/p3.rs"
