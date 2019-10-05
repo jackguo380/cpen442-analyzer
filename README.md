@@ -2,6 +2,7 @@
 
 This project contains 3 binaries for CPEN 442 Assignment 2.
 
+
 ## P1
 
 This is does simulated annealing to solve a substitution cipher stored in `cipher.txt`.
